@@ -9,13 +9,31 @@ import XCTest
 @testable import ToDo_List
 
 final class ToDo_ListTests: XCTestCase {
+    
+    var todos: Todos?
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // Load the JSON file
+        if let url = Bundle(for: type(of: self)).url(forResource: "todos", withExtension: "json") {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            todos = try decoder.decode(Todos.self, from: data)
+        }
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        todos = nil
+    }
+    
+    func testFirstToDoItem() throws {
+        guard let firstToDo = todos?.todos.first else { return }
+        XCTAssertEqual(firstToDo.todoTitle, "Do something nice for someone you care about")
+        XCTAssertFalse(firstToDo.completed)
+    }
+
+    func testCompletedTasksCount() throws {
+        let completedTodos = todos?.todos.filter { $0.completed }
+        XCTAssertEqual(completedTodos?.count, 15, "There should be 15 completed to-do items")
     }
 
     func testExample() throws {

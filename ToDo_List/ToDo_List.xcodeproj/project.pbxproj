@@ -13,6 +13,10 @@
 		A52979112C82424100FDB15E /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52979102C82424100FDB15E /* Storyboards.swift */; };
 		A52979132C825EF400FDB15E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52979122C825EF400FDB15E /* CoreDataManager.swift */; };
 		A52979162C826E2C00FDB15E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52979152C826E2C00FDB15E /* Notifications.swift */; };
+		A5302DDF2C84B95A0010A7B9 /* todos.json in Resources */ = {isa = PBXBuildFile; fileRef = A5302DDE2C84B95A0010A7B9 /* todos.json */; };
+		A5302DE02C84C0800010A7B9 /* todos.json in Resources */ = {isa = PBXBuildFile; fileRef = A5302DDE2C84B95A0010A7B9 /* todos.json */; };
+		A5302DE12C84C0810010A7B9 /* todos.json in Resources */ = {isa = PBXBuildFile; fileRef = A5302DDE2C84B95A0010A7B9 /* todos.json */; };
+		A5302DE42C84C4FB0010A7B9 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5302DE32C84C4FB0010A7B9 /* TodoModel.swift */; };
 		A5588C132C7DD178008C6096 /* TaskListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5588C122C7DD178008C6096 /* TaskListPresenter.swift */; };
 		A5588C172C7DD198008C6096 /* TaskListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5588C162C7DD198008C6096 /* TaskListRouter.swift */; };
 		A5588C192C7DD1B6008C6096 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5588C182C7DD1B6008C6096 /* TaskDetailViewController.swift */; };
@@ -59,6 +63,8 @@
 		A52979102C82424100FDB15E /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		A52979122C825EF400FDB15E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A52979152C826E2C00FDB15E /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		A5302DDE2C84B95A0010A7B9 /* todos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = todos.json; sourceTree = "<group>"; };
+		A5302DE32C84C4FB0010A7B9 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		A5588C122C7DD178008C6096 /* TaskListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListPresenter.swift; sourceTree = "<group>"; };
 		A5588C162C7DD198008C6096 /* TaskListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListRouter.swift; sourceTree = "<group>"; };
 		A5588C182C7DD1B6008C6096 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +147,14 @@
 				A52979152C826E2C00FDB15E /* Notifications.swift */,
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		A5302DE22C84C4EB0010A7B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5302DE32C84C4FB0010A7B9 /* TodoModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A5588C022C7DCFF1008C6096 /* Application */ = {
@@ -249,6 +263,7 @@
 				A529790F2C82423400FDB15E /* Constants */,
 				A5588C2A2C7DE615008C6096 /* CoreData */,
 				A529790C2C82402B00FDB15E /* Managers */,
+				A5302DE22C84C4EB0010A7B9 /* Models */,
 				A52979142C826E2200FDB15E /* Notifications */,
 			);
 			path = Core;
@@ -332,6 +347,7 @@
 		A5FA7D7A2C7DCB490066E4C1 /* ToDo_ListTests */ = {
 			isa = PBXGroup;
 			children = (
+				A5302DDE2C84B95A0010A7B9 /* todos.json */,
 				A5FA7D7B2C7DCB490066E4C1 /* ToDo_ListTests.swift */,
 			);
 			path = ToDo_ListTests;
@@ -451,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5AC10192C8343AA00C3DCD9 /* TaskAddViewController.storyboard in Resources */,
+				A5302DE02C84C0800010A7B9 /* todos.json in Resources */,
 				A5FA7D6E2C7DCB480066E4C1 /* Assets.xcassets in Resources */,
 				A5FA7D712C7DCB480066E4C1 /* Base in Resources */,
 				A5FA7D692C7DCB480066E4C1 /* Base in Resources */,
@@ -462,6 +479,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5302DDF2C84B95A0010A7B9 /* todos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5302DE12C84C0810010A7B9 /* todos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +506,7 @@
 				A5FA7D622C7DCB480066E4C1 /* AppDelegate.swift in Sources */,
 				A5588C212C7DD1EF008C6096 /* TaskDetailRouter.swift in Sources */,
 				A52979112C82424100FDB15E /* Storyboards.swift in Sources */,
+				A5302DE42C84C4FB0010A7B9 /* TodoModel.swift in Sources */,
 				A5FA7D642C7DCB480066E4C1 /* SceneDelegate.swift in Sources */,
 				A513E2962C7E049F000B76A2 /* TaskCell.swift in Sources */,
 				A5FA7D6C2C7DCB480066E4C1 /* ToDo_List.xcdatamodeld in Sources */,
@@ -781,6 +801,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NW6K64987Z;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ge.k.ToDo-ListUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -799,6 +820,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NW6K64987Z;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ge.k.ToDo-ListUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -42,7 +42,6 @@ extension TaskDetailRouter: TaskDetailRouterProtocol {
         viewController?.navigationController?.popViewController(animated: true)
     }
     
-    // TODO: UPDATING TASK NOT WORKING
     func edit(task: TaskModel) {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let edit = UIAlertAction(title: "Edit", style: .default) { _ in
